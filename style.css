@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  background-color: black;
+}
+* {
+  color: white;
+  font-family: Open Sans;
+}
+
+/*NavBar*/
+.navBar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+}
+/*Nav Left*/
+.navLeft img {
+  height: 3rem;
+  margin-top: 0.5rem;
+  margin-left: 0.75rem;
+}
+/*Nav Right*/
+.navRight a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 2.5rem;
+  font-family: Protest Guerrilla;
+}
+.navRight {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 80rem;
+}
+
+/*Show icons when hover*/
+.navs {
+  font-size: 24px;
+  transition: all 0.3s ease;
+  position: relative;
+  color: #000; /* Default color */
+  display: flex;
+  align-items: center; /* Add this line */
+}
+
+.navs .icon {
+  opacity: 0;
+  position: absolute;
+  top: 50%; /* Change this line */
+  left: 50%; /* Change this line */
+  transform: translate(-50%, -50%); /* Change this line */
+  transition: opacity 0.3s ease;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.navs:hover .defaultNav {
+  opacity: 0;
+}
+
+.navs:hover .icon {
+  opacity: 1;
+}
+
+.mavs.active .defaultNav {
+  opacity: 0;
+}
+.navs.active .icon {
+  opacity: 1;
+}
+/*Section*/
+section {
+  height: 1000px;
+  width: 100%;
+}
+.sectionHeader {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px white solid;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  font-family: Protest Guerrilla;
+}
+
+/*Section Home*/
+#home {
+  background-image: url("character pictures/gusion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.mlLogo img {
+  height: 11rem;
+}
+.MLlogo {
+  filter: drop-shadow(5px 5px 5px yellow);
+}
+.explore-button button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #232042;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-family: Protest Guerrilla;
+}
+
+/*Section Player*/
+#player {
+  background-color: rgb(140, 143, 221);
+}
+.player-content {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+/*Profile*/
+.player-profile {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  background-color: rgba(34, 43, 70, 0.616);
+  border-radius: 10px;
+}
+.player-profile img {
+  height: 10rem;
+}
+#playerProfile {
+  height: 10rem;
+  border: 1px white solid;
+}
+/*Main-Profile*/
+.main-profile {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #2a20998c;
+}
+.game-info {
+  margin-left: 2rem;
+}
+
+/*Sub-Profile*/
+.sub-profile {
+  margin-left: 1rem;
+}
+.achievements img {
+  height: 5rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.best-rank {
+  margin-left: 2rem;
+}
